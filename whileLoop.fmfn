@@ -1,0 +1,25 @@
+
+While ( 
+
+	[ 
+		result = 0 ; 
+		count = ValueCount ( $data ) ; 
+
+
+
+		i = 0
+
+	] 
+	; i < count ; 
+
+			[ 
+
+				i = i + 1 ; 
+				
+					
+
+ 			] ; 
+	result 
+
+
+			) ;
