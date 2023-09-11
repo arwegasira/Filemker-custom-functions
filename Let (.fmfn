@@ -1,0 +1,27 @@
+Let ( 
+
+
+	[
+
+	 ~table1 = SQL_Get_TableName ( Payrolls::id )
+	;~field1  = SQL_Get_FieldName ( Payrolls::id )
+	;~qfield1 = SQL_Get_FieldName ( Payrolls::yearMonth )
+	;~qvalue1 = GetAsNumber ( $prevYearM )
+
+	
+
+	;~sql = "SELECT "&~field1&" FROM "&~table1&" WHERE "&~qfield1&" = ?   "
+	;~result = ExecuteSQL ( ~sql ; "" ; "" ; ~qvalue1 )
+
+
+
+
+
+
+	];
+
+
+
+~result
+
+ )
