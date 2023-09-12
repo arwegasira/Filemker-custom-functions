@@ -1,0 +1,30 @@
+Let (
+
+
+ 	[
+
+	// query object
+	~query = JSONSetElement ( ""
+			;["[0].settlementLastworkingDate";""&Preference::SettlementDateStart&"..."&Preference::SettlementDateEnd&"" ; 1 ] 
+			;["[0].settlementRequestStatus"; "==Approved for payment" ; 1 ]
+			;["[0].settlementIsSalaryProcced"; "=" ; 1 ]
+
+		) ;
+
+	// request Object
+	~request = JSONSetElement ( ""  
+
+	;["action" ; "read" ; 1 ]
+	;["version" ; "vLatest" ; 1 ]
+	;["layouts" ; "employeeDataApi" ; 1 ]
+	;["query" ; ~query ; 4 ]
+
+
+ )
+
+] ;
+
+ ~request 
+
+
+ )
